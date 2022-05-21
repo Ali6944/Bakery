@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet World</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="preloader flex-container fix-position">
+      <img src="preloader.gif" alt="" />
+    </div>
+    <header>
+      <div class="nav-header absolute container flex-container">
+        <h1>Paula's Sweet Land</h1>
+        <div class="menu">
+          <button id="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times hidden"></i>
+          </button>
+        </div>
+        <nav>
+          <ul class="flex-container">
+            <li><a href="index.html" class="current-page">Home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="product.html">products</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="overlay absolute flex-containers">
+        <h1>Making Cake is an Art</h1>
+      </div>
+      <video class="absolute video-container" autoplay loop muted>
+        <source src="background-2.mp4" type="video/mp4" />
+      </video>
+      <button class="player-control absolute">
+        <span>Play</span>
+        <span>Pause</span>
+        <span class="slider"></span>
+      </button>
+    </header>
+    <aside class="aside-menu fix-position hide-sidebar">
+      <ul>
+        <li><a href="index.html" class="current-page">Home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="product.html">products</a></li>
+      </ul>
+    </aside>
+    <main class="service-section">
+      <div class="title container">
+        <h1>our service</h1>
+      </div>
+      <article class="question service-question-container">
+        <div class="question-container">
+          <div class="question-title flex-container">
+            <p class="question-answer">Do you support major credit cards?</p>
+            <button class="btn">
+              <span class="plus">
+                <i class="fas fa-plus-square"></i>
+              </span>
+              <span class="minus">
+                <i class="fas fa-minus-square"></i>
+              </span>
+            </button>
+          </div>
+          <div class="answer">
+            <p>yes, we support visa, mastercard and etc.</p>
+          </div>
+        </div>
+        <div class="question-container">
+          <div class="question-title flex-container">
+            <p class="question-answer">
+              How long does it take to prepare my order?
+            </p>
+            <button class="btn">
+              <span class="plus">
+                <i class="fas fa-plus-square"></i>
+              </span>
+              <span class="minus">
+                <i class="fas fa-minus-square"></i>
+              </span>
+            </button>
+          </div>
+          <div class="answer">
+            <p>
+              We recommand our customer to order at least 1 week before to have
+              well designed and higher quality order
+            </p>
+          </div>
+        </div>
+        <div class="question-container">
+          <div class="question-title flex-container">
+            <p class="question-answer">Do you use palm oil in your products?</p>
+            <button class="btn">
+              <span class="plus">
+                <i class="fas fa-plus-square"></i>
+              </span>
+              <span class="minus">
+                <i class="fas fa-minus-square"></i>
+              </span>
+            </button>
+          </div>
+          <div class="answer">
+            <p>
+              We impress that we do not use palm oil. we just use organic oil
+              produced in vilage
+            </p>
+          </div>
+        </div>
+        <div class="question-container">
+          <div class="question-title flex-container">
+            <p class="question-answer">Do you have free delivery?</p>
+            <button class="btn">
+              <span class="plus">
+                <i class="fas fa-plus-square"></i>
+              </span>
+              <span class="minus">
+                <i class="fas fa-minus-square"></i>
+              </span>
+            </button>
+          </div>
+          <div class="answer">
+            <p>
+              It depends where you are located. we have free delivery to our
+              customers living in warsaw
+            </p>
+          </div>
+        </div>
+      </article>
+      <!--end of service section-->
+    </main>
+
+    <div class="title container">
+      <h1>reviews</h1>
+      <p class="review-sub">What our clients say</p>
+    </div>
+    <div class="comment-wrapper">
+      <div class="top-info">
+        <div class="img-cont">
+          <img
+            src="images/people/1.jpg"
+            alt="people picture"
+            class="customers-img"
+          />
+        </div>
+        <h3 class="name-customer">Sara Jones</h3>
+        <p class="info-twt">@sarajonas</p>
+        <p class="comment-body">
+          I am so pleased of my order. it was so fun celebrating my son's
+          birthday with my friends and family
+        </p>
+      </div>
+      <div class="btn-container">
+        <button class="btn move-btn" data-id="previous"><</button>
+        <button class="btn move-btn" data-id="next">></button>
+      </div>
+    </div>
+    <footer>
+      <p>Paula's sweet world shopping website</p>
+      <p>This website is made with ♥ by Ali Doosti 2022</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
